@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regex Checker</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			/* --background-color: #5fb16b;-- */
+			margin: 0;
+			padding: 0;
+		}
+
+		form {
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #ec2a2a;
+			max-width: 500px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"] {
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #d215af;
+			border-radius: 5px;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #3d2aa8;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #26d12b;
+		}
+	</style>
+</head>
+<body>
+	<form action="http://127.0.0.1:5000/regex" method="POST">
+		<label for="target_string">Enter the string you want to check regex for:</label>
+		<input type="text" id="target_string" name="target_string" required>
+		<br>
+		
+		<label for="regex_ptrn">Enter the string that you want as a regex pattern:</label>
+		<input type="text" id="regex_ptrn" name="regex_ptrn" required>
+		<br>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
+
+<!-- <html>
+    <body>
+        <form action= "http://127.0.0.1:5000/regex" method='POST'>
+            <label for="target_string">enter the string you want to check reg ex for : </label>
+            <input type="text" id="target_string" name="target_string" required>
+            <br>
+
+            <label for ='regex_ptrn'> enter the string that you want as an regex pattern : </label>
+            <input id="regex_ptrn" name="regex_ptrn" required>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
+
+
+-->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Form</title>
+</head>
+<body>
+	<form>
+		<label for="input1">Input 1:</label>
+		<input type="text" id="input1" name="input1"><br><br>
+
+		<label for="input2">Input 2:</label>
+		<input type="text" id="input2" name="input2"><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+ -->
